@@ -19,4 +19,21 @@ In the future, I aspire to become an Aerospace Engineer after obtaining a Master
 
 <td><img src="{{site.baseurl}}/images/logo.png" height="60" title="Pair" alt=""></td>
 
+<img id="Mario" src="https://i.pinimg.com/originals/66/c9/e8/66c9e8ecf6503fef1d904bee6e9246d0.gif"
+atl="mario" style="width:130px; postition:absolute; bottom:0; left:0;">
 
+<script>
+    function moveMario() {
+        var mario = document.getElementById("Mario");
+        var position = 0;
+        var speed = 3;
+        var interval = setInterval(function () {
+            if (position >= window.innerWidth) {
+                position = -130;
+    
+            } else {
+                position += speed;
+                mario.style.left = position + "px";
+            }
+        }, 10);
+    }
