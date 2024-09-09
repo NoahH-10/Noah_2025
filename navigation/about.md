@@ -21,9 +21,9 @@ hide: true
 - I have 3 siblings, 2 younger sisters, one of which is currently a freshman here at Del Norte, and one who attends Oak Valley Middle School. I have an older brother who is 18 years old and in college.
 
 <div style="display: flex; gap: 10px;">
-  <img src="images/IMG_0292.jpg" width="200" alt="Family_1" />
-  <img src="images/IMG_1930.jpg" width="200" alt="Family_2" />
-  <img src="images/IMG_1962.jpg" width="200" alt="Family_3" />
+  <img src="{{site.baseurl}}/images/IMG_0292.jpg" width="200" height="auto" alt="Family_1" />
+  <img src="{{site.baseurl}}/images/IMG_1930.jpg" width="400" height="auto" alt="Family_2" />
+  <img src="{{site.baseurl}}/images/IMG_1962.jpg" width="300" height="auto" alt="Family_3" />
 </div>
 
 
