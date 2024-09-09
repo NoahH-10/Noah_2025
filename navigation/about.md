@@ -14,7 +14,10 @@ hide: true
 - I played soccer for over 10 years, but stopped due to a conflict with football, and I chose to focus my efforts on football
 - During the offseason, I play futsal, and have made the USYF National ID Camp 3 years in a row
 
-/* football picture - soccer/futsal picture */
+<div style="display: flex; gap: 10px;">
+  <img src="{{site.baseurl}}/images/IMG_2354.jpg" width="300" height="auto" alt="Soccer_1" />
+  <img src="{{site.baseurl}}/images/IMG_2355.jpg" width="300" height="auto" alt="Futsal_2" />
+</div>
 
 ## Family/Pets
 - I have 10 pets, 6 bunnies, 2 birds, and 2 cats.
