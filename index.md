@@ -1,26 +1,48 @@
 ---
 layout: base
-title: About Me 
+title: Student Home 
 description: Home Page
 hide: true
 ---
 
-## About Me
-Hello,
+Hello, I'm Noah Harris, and this is my homepage.
 
-My name is Noah Harris.
-- I play football for our very own Del Norte Nighthawks. I am currently on JV and play Linebacker and Kicker.
-- I 10 pets, 6 bunnies, 2 birds, and 2 cats.
-- I am a junior, and this trimester, I am currently taking Physics 1, AP Calculus AB, US History 1, AP CSP, and Advanced Football and Weights.
+<div style="border: 2px solid black; padding: 5px; margin-bottom: 15px;">
+<p> Links to websites </p>
+    <button
+ style="background-color: #000080 !important; font-family: 'sans-serif' !important "> Nothing
+    </button>
+        <div style ="font-weight: bold; font-size: 24px; display: inline-block; margin: 10px;"> buttons </div>
+</div>
 
-## My Career
-In the future, I aspire to become an Aerospace Engineer after obtaining a Master's Degree in Aerospace engineering. 
+<div style="border: 2px solid black; padding: 5px; background-color: #FFFFFF !important">
+    <a href="put website link here" style="border: 2px solid black; display: block; padding: 10px; margin: 10px; color: blue: font-weight: bold; text-align: center; text-decoration; none;"> Bird Video</a>
+     <a href="second link here" style="border: 2px solid black; display: block; padding: 10px; margin: 10px; color: blue: font-weight: bold; text-align: center; text-decoration; none;"> button text </a>
+    <a href="another link here" style="border: 2px solid black; display: block; padding: 10px; margin: 10px; color: blue: font-weight: bold; text-align: center; text-decoration; none;"> button text 2</a>
+
+<script>
+    function mysteryButton () {
+        alert ("thanks for reading about me!")
+    }
+</script>
+<p style="text-align: left;">
+    <button style ="padding: 15px 30px; background-colorL#FFFFFF !important;"
+    button onClick= "mysteryButton()">
+        Click?
+    </button>
+</p>
+
+</div>
+
 
 
 <td><img src="{{site.baseurl}}/images/logo.png" height="60" title="Pair" alt=""></td>
 
+
+
+
 <img id="Mario" src="https://i.pinimg.com/originals/66/c9/e8/66c9e8ecf6503fef1d904bee6e9246d0.gif"
-atl="mario" style="width:130px; postition:absolute; bottom:0; left:0;">
+alt="mario" style="width:130px; position:absolute; bottom:0; left:0;">
 
 <script>
     function moveMario() {
@@ -30,10 +52,12 @@ atl="mario" style="width:130px; postition:absolute; bottom:0; left:0;">
         var interval = setInterval(function () {
             if (position >= window.innerWidth) {
                 position = -130;
-    
             } else {
                 position += speed;
                 mario.style.left = position + "px";
             }
         }, 10);
     }
+
+    moveMario ();
+ </script>
