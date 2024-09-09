@@ -23,7 +23,7 @@ hide: true
 <div style="display: flex; gap: 10px;">
   <img src="{{site.baseurl}}/images/IMG_0292.jpg" width="200" height="auto" alt="Family_1" />
   <img src="{{site.baseurl}}/images/IMG_1930.jpg" width="400" height="auto" alt="Family_2" />
-  <img src="{{site.baseurl}}/images/IMG_1962.jpg" width="300" height="auto" alt="Family_3" />
+  <img src="{{site.baseurl}}/images/IMG_1962.jpg" width="350" height="auto" alt="Family_3" />
 </div>
 
 
