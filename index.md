@@ -10,15 +10,18 @@ Hello, I'm Noah Harris, and this is my homepage.
 <div style="border: 2px solid black; padding: 5px; margin-bottom: 15px;">
 <p> Links to websites </p>
     <button
- style="background-color: #000080 !important; font-family: 'sans-serif' !important "> Nothing
+ style="background-color: #000080 !important; font-family: 'sans-serif' !important "> Nothing Button
     </button>
-        <div style ="font-weight: bold; font-size: 24px; display: inline-block; margin: 10px;"> buttons </div>
+        <div style ="font-weight: bold; font-size: 24px; display: inline-block; margin: 10px;"> </div>
 </div>
 
 <div style="border: 2px solid black; padding: 5px; background-color: #FFFFFF !important">
-    <a href="put website link here" style="border: 2px solid black; display: block; padding: 10px; margin: 10px; color: blue: font-weight: bold; text-align: center; text-decoration; none;"> Bird Video</a>
-     <a href="second link here" style="border: 2px solid black; display: block; padding: 10px; margin: 10px; color: blue: font-weight: bold; text-align: center; text-decoration; none;"> button text </a>
-    <a href="another link here" style="border: 2px solid black; display: block; padding: 10px; margin: 10px; color: blue: font-weight: bold; text-align: center; text-decoration; none;"> button text 2</a>
+    <a href="https://drive.google.com/file/d/1_GsQeJ_m5Ud60po314g6Y6vNuCqPnqwo/view?usp=sharing"  target="_blank" style="border: 2px solid black; display: block; padding: 10px; margin: 10px; color: blue: font-weight: bold; text-align: center; text-decoration; none;"> Birds</a>
+     <a href="https://drive.google.com/file/d/1mf4lHnAjvh5-Ks-7hDVqr6NwGGJ9U-CE/view?usp=drive_link" target="_blank" style="border: 2px solid black; display: block; padding: 10px; margin: 10px; color: blue: font-weight: bold; text-align: center; text-decoration; none;"> Football Tackle (I'm #32) </a>
+
+
+
+
 
 <script>
     function mysteryButton () {
@@ -33,13 +36,6 @@ Hello, I'm Noah Harris, and this is my homepage.
 </p>
 
 </div>
-
-
-
-<td><img src="{{site.baseurl}}/images/logo.png" height="60" title="Pair" alt=""></td>
-
-
-
 
 <img id="Mario" src="https://i.pinimg.com/originals/66/c9/e8/66c9e8ecf6503fef1d904bee6e9246d0.gif"
 alt="mario" style="width:130px; position:absolute; bottom:0; left:0;">

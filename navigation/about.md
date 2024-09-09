@@ -26,5 +26,5 @@ hide: true
 - I am a junior, and this trimester, I am currently taking Physics 1, AP Calculus AB, US History 1, AP CSP, and Advanced Football and Weights
 - My favorite subject is math, as I enjoy solving complicated problems and challenging my brain
 
-/* math picture */
 
+<td><img id="Math" src="https://img.freepik.com/free-vector/math-chalkboard-background_23-2148153486.jpg" height="300"></td>
