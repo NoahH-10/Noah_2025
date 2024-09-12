@@ -21,14 +21,22 @@ hide: true
 
 ## Family/Pets
 - I have 10 pets, 6 bunnies, 2 birds, and 2 cats.
+- The birds names are KeiKi (the yellow and gray one) and Peeps (the full gray one)
+- The cats names are Sparrow (the orange one) and Luna (the brown-black one)
+- The bunnies are, from left to right on the gallery, Oreo, Nutmeg, Cupcake, 
 - I have 3 siblings, 2 younger sisters, one of which is currently a freshman here at Del Norte, and one who attends Oak Valley Middle School. I have an older brother who is 18 years old and in college.
 
-<div style="display: flex; gap: 10px;">
-  <img src="{{site.baseurl}}/images/IMG_0292.jpg" width="200" height="auto" alt="Family_1" />
-  <img src="{{site.baseurl}}/images/IMG_1930.jpg" width="400" height="auto" alt="Family_2" />
-  <img src="{{site.baseurl}}/images/IMG_1962.jpg" width="350" height="auto" alt="Family_3" />
+<div style="overflow-x: auto; display: flex; gap: 10px;">
+  <img src="{{site.baseurl}}/images/IMG_0292.jpg" width="200" height="300" alt="Family_1" />
+  <img src="{{site.baseurl}}/images/IMG_1930.jpg" width="400" height="300" alt="Family_2" />
+  <img src="{{site.baseurl}}/images/IMG_1962.jpg" width="350" height="300" alt="Family_3" />
+  <img src="{{site.baseurl}}/images/IMG_0423.jpg" width="450" height="300" alt="Pet_1" />
+  <img src="{{site.baseurl}}/images/IMG_0950.jpg" width="450" height="300" alt="Pet_2" />
+  <img src="{{site.baseurl}}/images/IMG_1821.jpg" width="400" height="300" alt="Pet_3" />
+  <img src="{{site.baseurl}}/images/IMG_1851.jpg" width="350" height="300" alt="Pet_4" />
+  <img src="{{site.baseurl}}/images/IMG_2347.jpg" width="400" height="300" alt="Pet_5" />
+ <img src="{{site.baseurl}}/images/Attachment.jpg" width="400" height="300" alt="Pet_6" />
 </div>
-
 
 
 ## Academics
