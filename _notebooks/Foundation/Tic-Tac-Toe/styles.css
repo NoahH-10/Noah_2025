@@ -1,14 +1,11 @@
+/* styles.css */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-.container {
-    text-align: center;
+h1 {
+    margin-bottom: 20px;
 }
 
 .game-board {
@@ -16,36 +13,27 @@ body {
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
 }
 
 .cell {
     width: 100px;
     height: 100px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2em;
+    background-color: #eee;
     cursor: pointer;
 }
 
-.cell.x {
-    color: #f00;
+.cell:hover {
+    background-color: #ddd;
 }
 
-.cell.o {
-    color: #00f;
-}
-
-.restart-btn {
+button {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.status {
-    margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1em;
 }
