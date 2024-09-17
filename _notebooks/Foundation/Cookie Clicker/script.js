@@ -6,7 +6,7 @@ const scoreElement = document.getElementById('score');
 const cookieImage = document.getElementById('cookie');
 
 // Create a new Audio object for the sound effect
-const clickSound = new Audio('sounds/NOM_SOUND.wav');
+const clickSound = new Audio('Sounds/NOM_SOUND.wav'); // SOUND EFFECT NOT WORKING - FIX IT
 
 // Function to update the score
 function updateScore() {
