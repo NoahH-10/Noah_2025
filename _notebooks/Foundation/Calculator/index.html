@@ -55,6 +55,7 @@
         }
         .clear {
             background-color: #dc3545;
+            grid-column: span 2; /* Make the clear button take up two columns */
         }
         .clear:hover {
             background-color: #c82333;
@@ -85,7 +86,7 @@
             <button class="clear" onclick="clearDisplay()">C</button>
             <button onclick="appendToDisplay('(')">(</button>
             <button onclick="appendToDisplay(')')">)</button>
-            <button class="operator" onclick="appendToDisplay('/')">/</button>
+            
 
             <!-- Row 2 -->
             <button onclick="appendToDisplay('1')">1</button>
@@ -105,12 +106,18 @@
             <button onclick="appendToDisplay('9')">9</button>
             <button class="operator" onclick="appendToDisplay('+')">+</button>
 
-            <!-- Row 5 -->
-            <button class="equals" onclick="calculateResult()">=</button>
+            <!-- Row 5 (new row for exponent and square root) -->
+        
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
             <button class="zero" onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('**')" class="sqrt-exponent">^</button>
             <button onclick="appendToDisplay('sqrt(')" class="sqrt-exponent">√</button>
-           
+
+            <!-- Row 6 (additional buttons for decimal and sign change) -->
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="changeSign()">+/-</button>
+            <button class="equals" onclick="calculateResult()">=</button>
+            
         </div>
     </div>
 
@@ -136,6 +143,13 @@
                 display.value = result;
             } catch (error) {
                 display.value = 'Error';
+            }
+        }
+
+        function changeSign() {
+            const display = document.getElementById('display');
+            if (display.value) {
+                display.value = String(-parseFloat(display.value));
             }
         }
     </script>
