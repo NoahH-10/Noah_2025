@@ -45,3 +45,12 @@ hide: true
 
 
 <td><img id="Math" src="https://img.freepik.com/free-vector/math-chalkboard-background_23-2148153486.jpg" height="300"></td>
+
+<script src="https://utteranc.es/client.js"
+        repo="NoahH-10/Noah_2025"
+        issue-term="pathname"
+        label="Website Review"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
