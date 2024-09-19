@@ -8,6 +8,9 @@ let direction = 'RIGHT';
 let food = spawnFood();
 let score = 0;
 
+// Power-up settings
+let powerUp = { x: 0, y: 0, active: false };
+
 // Control the snake with arrow keys
 document.addEventListener('keydown', directionControl);
 
@@ -34,6 +37,9 @@ function draw() {
     ctx.fillStyle = 'red';
     ctx.fillRect(food.x, food.y, box, box);
 
+    // Draw power-up
+    drawPowerUp();
+
     // Old head position
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
@@ -51,6 +57,9 @@ function draw() {
     } else {
         snake.pop(); // Remove the tail
     }
+
+    // Check for power-up collision
+    checkPowerUpCollision();
 
     // Add new head
     const newHead = { x: snakeX, y: snakeY };
@@ -86,5 +95,33 @@ function spawnFood() {
     return newFood;
 }
 
+// Draw power-up
+function drawPowerUp() {
+    if (powerUp.active) {
+        ctx.fillStyle = "blue";
+        ctx.fillRect(powerUp.x, powerUp.y, box, box);
+    }
+}
+
+// Spawn power-up
+function spawnPowerUp() {
+    if (!powerUp.active) {
+        powerUp.x = Math.floor(Math.random() * (canvas.width / box)) * box;
+        powerUp.y = Math.floor(Math.random() * (canvas.height / box)) * box;
+        powerUp.active = true;
+    }
+}
+
+// Check for collision with the power-up
+function checkPowerUpCollision() {
+    if (powerUp.active && snake[0].x === powerUp.x && snake[0].y === powerUp.y) {
+        snake.pop(); // Reduce length by removing last segment
+        powerUp.active = false; // Deactivate the power-up
+    }
+}
+
 // Game loop
-let game = setInterval(draw, 100);
+let game = setInterval(() => {
+    spawnPowerUp(); // Spawn power-up if not active
+    draw(); // Call the draw function
+}, 100);

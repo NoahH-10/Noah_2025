@@ -37,6 +37,38 @@ Hello, I'm Noah Harris, and this is my homepage.
 
 </div>
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Calculator</title>
+    <style>
+        button {
+            padding: 15px 30px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+
+    
+<script src="https://utteranc.es/client.js"
+        repo="NoahH-10/Noah_2025"
+        issue-term="pathname"
+        label="Website Review"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
 <img id="Mario" src="https://orig00.deviantart.net/693e/f/2016/345/a/d/mario_run5_devart_by_t_free-daraj8q.gif"
 alt="mario" style="width:130px; position:absolute; bottom:100; left:0;">
 

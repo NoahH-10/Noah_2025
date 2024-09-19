@@ -11,21 +11,34 @@
             display: block;
             margin: 20px auto;
         }
+        #restartButton {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <button id="restartButton">Restart Game</button>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const canvas = document.getElementById('gameCanvas');
             const ctx = canvas.getContext('2d');
-
-            // Game settings
             const box = 20;
-            let snake = [{ x: 9 * box, y: 9 * box }];
-            let direction = 'RIGHT';
-            let food = spawnFood();
-            let score = 0;
+            let snake, direction, food, score, game;
+
+            function startGame() {
+                snake = [{ x: 9 * box, y: 9 * box }];
+                direction = 'RIGHT';
+                food = spawnFood();
+                score = 0;
+
+                if (game) clearInterval(game); // Clear any existing game loop
+                game = setInterval(draw, 100);
+            }
 
             // Control the snake with arrow keys
             document.addEventListener('keydown', directionControl);
@@ -37,9 +50,27 @@
                 else if (event.key === 'ArrowDown' && direction !== 'UP') direction = 'DOWN';
             }
 
+            // Draw the grid
+            function drawGrid() {
+                ctx.strokeStyle = '#ccc'; // Grid line color
+                for (let x = 0; x < canvas.width; x += box) {
+                    ctx.beginPath();
+                    ctx.moveTo(x, 0);
+                    ctx.lineTo(x, canvas.height);
+                    ctx.stroke();
+                }
+                for (let y = 0; y < canvas.height; y += box) {
+                    ctx.beginPath();
+                    ctx.moveTo(0, y);
+                    ctx.lineTo(canvas.width, y);
+                    ctx.stroke();
+                }
+            }
+
             // Draw everything
             function draw() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
+                drawGrid(); // Draw the grid
 
                 // Draw snake
                 for (let i = 0; i < snake.length; i++) {
@@ -105,8 +136,11 @@
                 return newFood;
             }
 
-            // Game loop
-            let game = setInterval(draw, 100);
+            // Restart button event listener
+            document.getElementById('restartButton').addEventListener('click', startGame);
+
+            // Start the game initially
+            startGame();
         });
     </script>
 </body>
