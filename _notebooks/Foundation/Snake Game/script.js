@@ -76,10 +76,14 @@ function collision(head, array) {
 
 // Spawn food at random position
 function spawnFood() {
-    return {
-        x: Math.floor(Math.random() * (canvas.width / box)) * box,
-        y: Math.floor(Math.random() * (canvas.height / box)) * box,
-    };
+    let newFood;
+    do {
+        newFood = {
+            x: Math.floor(Math.random() * (canvas.width / box)) * box,
+            y: Math.floor(Math.random() * (canvas.height / box)) * box,
+        };
+    } while (collision(newFood, snake)); // Ensure food doesn't spawn on the snake
+    return newFood;
 }
 
 // Game loop
